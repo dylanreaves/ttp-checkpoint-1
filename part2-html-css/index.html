@@ -54,10 +54,43 @@
         Both rules target the same paragraph.
         Which color will the paragraph actually be? Why does one rule win?
 
-        Answer:
+        Answer: #intro will win because CSS puts ID's at a higher priority order than elements.
 
 -->
 
 <!-- ============================================================ -->
 <!-- Write your complete HTML page starting below this line      -->
 <!-- ============================================================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- The browser title for the page -->
+  <head>
+    <title>HTML Page</title>
+    <!-- The stylesheet is linked at the head because it is the first thing that is rendered
+    and the browser can automatically apply it to other elements that are created afterwards -->
+    <link rel="stylesheet" href="look.css">
+  </head>
+
+  <!-- The page -->
+  <body>
+    <h1>My Checkpoint Page</h1>
+    <p id="intro"> This is my checkpoint page to show my progress learning JavaScript, HTML, CSS. I find CSS the most challenging as it has a lot of propreties that are hidden and have seemingly weird names. </p>
+    <h2 id="section-title"> List: </h2>
+    <ul> 
+         <!-- 
+        1. The difference between a class and an id is that an id is unique and its meant to be the identifier for that specific element.
+        2. Yes because classes don't have to be unique.
+        3. No because id's are unique and cannot be shared.
+         -->
+        <li class="highlight"> Highlighted 1</li>   
+        <li> Normal 1 </li>   
+        <li class="highlight"> Highlighted 2 </li>   
+        <li> Normal 2 </li>   
+    </ul>
+    <div id="box"> The button below does not do anything yet :[ </div>
+    <button id = "click-me"> Click me </button>
+  </body>
+
+</html>

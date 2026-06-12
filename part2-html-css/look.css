@@ -7,24 +7,32 @@
   Answer EXPLAIN prompts as CSS comments directly below the relevant rule.
 */
 
-
 /*
   TASK A
   Using the body TAG selector, set a background color on the page.
 */
-
+body {
+  background-color: rgb(50, 50, 50);
+}
 
 /*
   TASK B
   Using the h1 TAG selector, set a font size and a color.
 */
-
+h1 {
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+}
 
 /*
   TASK C
   Using the CLASS selector, style the list items with the highlight class.
   Give them a background color and some padding so they stand out.
 */
+.highlight {
+  background-color: rgb(240, 220, 120);
+  padding: 4px;
+}
 
 
 /*
@@ -32,7 +40,9 @@
   Using the ID selector, give the h2 with the id section-title a color that is
   different from the h1 and different from body text.
 */
-
+#section-title {
+  color: rgb(200, 200, 200);
+}
 
 /*
   TASK E
@@ -47,9 +57,15 @@
            Write your answer as a comment below this rule.
 
 
-           answer:
+           answer: padding creates space inside an element and margin makes space outside of it which pushes other elements near it.
 */
-
+#box {
+  width: 200;
+  height: 200;
+  border: 4px;
+  padding: 5px;
+  margin: 5px;
+}
 
 /*
   TASK F
@@ -57,7 +73,13 @@
   It must have a background color, a text color, a border, padding,
   and a cursor: pointer that turns into a pointer when the user hovers over it.
 */
-
+#click-me {
+  background-color: rgb(150,150,150);
+  color: rgb(0, 0, 0);
+  border: 4px;
+  padding: 4px;
+  cursor: pointer;
+}
 
 /*
   TASK G — Specificity
@@ -72,5 +94,8 @@
            What is CSS specificity and how does it determine which rule wins?
            Write your answer as a comment below these two rules.
 
-           answer:
+           answer: #intro will win because CSS puts ID's at a higher priority order than elements.
 */
+
+p { color: steelblue; font-size: large; }
+#intro { color: tomato;    }
