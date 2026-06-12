@@ -9,6 +9,11 @@
   JavaScript will add and remove this class — you just define what it looks like.
 */
 
+.highlighted {
+  background-color: rgb(240, 220, 10);
+  border: 4px;
+  border-radius: 4px;
+}
 
 /*
   Add any other styles you want below.
