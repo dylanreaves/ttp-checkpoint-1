@@ -148,7 +148,11 @@ console.log(listItem.classList)
 //          Why can't you write the code outside of a function
 //          and expect it to run when the button is clicked?
 //
-//          answer:
+//          answer: An event listener is a function that waits for a document event to be triggered.
+//           1. An event listener is a function that waits for a document event to be triggered.
+//              There are a list of events that exist for each HTML element and the listener waits for them to be triggered.
+//           2. Because eventlistener expects a callback to execute later when the event is triggered. If it was written outside of of a function
+//              it would execute as the script runs which means it can't be deferred.
 
 
 // C5.
@@ -189,6 +193,10 @@ document.getElementById("item-list").appendChild(newListElement)
 document.getElementById("add-btn").addEventListener("click", (event) => {
     const itemInput = document.getElementById("item-input")
     const newItemEntry = document.createElement("li")
+
+    if (itemInput.value.length < 2) {
+        return
+    }
 
     newItemEntry.classList.add("list-item")
     newItemEntry.textContent = itemInput.value
