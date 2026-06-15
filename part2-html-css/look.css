@@ -41,7 +41,7 @@ h1 {
   different from the h1 and different from body text.
 */
 #section-title {
-  color: rgb(200, 200, 200);
+  color: azure;
 }
 
 /*
@@ -60,11 +60,12 @@ h1 {
            answer: padding creates space inside an element and margin makes space outside of it which pushes other elements near it.
 */
 #box {
-  width: 200;
-  height: 200;
+  width: 150px;
+  height: 50px;
   border: 4px;
   padding: 5px;
   margin: 5px;
+  color: azure;
 }
 
 /*

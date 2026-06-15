@@ -24,11 +24,13 @@ console.log("[ SECTION A — Selecting Elements ]")
 //   the unordered list
 const mainHeading = document.getElementById("main-heading")
 const pageStatus = document.getElementById("subtitle")
-const listSection = document.getElementById("list-section")
+const itemList = document.getElementById("item-list")
+//const listSection = document.getElementById("list-section")
 
 console.log(mainHeading)
 console.log(pageStatus)
-console.log(listSection)
+console.log(itemList)
+//console.log(listSection)
 
 // A2.
 // Use querySelector to select the following elements.

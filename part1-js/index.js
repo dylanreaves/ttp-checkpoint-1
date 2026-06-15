@@ -361,7 +361,8 @@ console.log(square(9))   // → 81
 // true if it is even and false if it is odd.
 //
 function isEven(num) {
-  return (num % 2 == 0) ? true : false
+  return (num % 2 == 0)
+  //return (num % 2 == 0) ? true : false
 }
 
 console.log(isEven(4))   // → true
@@ -453,6 +454,7 @@ function myFilter(array, callback) {
   }
   return newArr
 }
+
 
 console.log(myFilter([1, 2, 3, 4, 5], n => n > 3))          // → [4, 5]
 console.log(myFilter([10, 25, 30, 45], n => n % 2 === 0))   // → [10, 30]
